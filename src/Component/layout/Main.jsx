@@ -1,16 +1,25 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { createContext } from 'react';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Header from '../Header';
-import Home from '../Home';
+export const BookDataContext  = createContext([])
+export const CartContext =createContext([])
+
 
 const Main = () => {
+    const book =useLoaderData()
+    const bookData = book.data;
+    console.log(bookData);
+  
     return (
-        <div>
+       <BookDataContext.Provider value={bookData}>
+        
             <Header></Header>
             <Outlet></Outlet>
-            <Home></Home>
-        </div>
+           
+        
+
+       </BookDataContext.Provider>
     );
-};
+}; 
 
 export default Main;

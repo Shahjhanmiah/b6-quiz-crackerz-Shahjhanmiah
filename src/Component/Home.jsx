@@ -16,21 +16,9 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center">
             <Link to="/shop">
-              <button
-                type="button"
-                className="px-8 py-3 m-2 text-lg font-semibold rounded-full  text-gray-900 hover:bg-cyan-400 bg-cyan-200"
-              >
-                Book Now
-              </button>
+             
             </Link>
-            <Link to="/about">
-              <button
-                type="button"
-                className="px-8 py-3 m-2 text-lg border rounded-full border-cyan-400 text-gray-900"
-              >
-                Learn more
-              </button>
-            </Link>
+           
           </div>
         </div>
       </div>
