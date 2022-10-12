@@ -25,11 +25,11 @@ const Quic = () => {
         
     },[])
     return (
-        <ResponsiveContainer width="100%" height={400}>
+        
         <BarChart width={150} height={40} data={answer}>
-          <Bar dataKey="uv" fill="#8884d8" />
+          <Bar dataKey="quiz" fill="#8884d8" />
         </BarChart>
-      </ResponsiveContainer>
+  
     );
 };
 
