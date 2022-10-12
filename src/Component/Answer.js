@@ -3,7 +3,7 @@ import Question from './Question';
 
 
 const Answer = ({quiz}) => {
-    const {options,question,id,correctAnswer}= quiz;
+    const {options,question,id,correctAnswer,data}= quiz;
     console.log(correctAnswer);
     const handleClick =(answer)=>{
         // console.log(correctAnswer,answer)
@@ -20,7 +20,7 @@ const Answer = ({quiz}) => {
            
            <div className='bg-green-200 p-8 my-5 rouded-lg'>
             <h3 className='text-2xl font-semibold md-5'>
-                {question}
+                <p>{question}</p>
             </h3>
             <h3 className='text-2xl font-semibold md-5 bg-green-200 p-8 my-5'>
                 <p onClick={()=>handleClick(correctAnswer)} className='text-blue-500 icons'><i class="fa-solid fa-eye">

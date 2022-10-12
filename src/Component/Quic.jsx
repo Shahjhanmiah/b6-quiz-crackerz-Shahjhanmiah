@@ -1,35 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, RsiveContainer, ResponsiveContainer } from 'recharts';
-import axios from 'axios';
-
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts'
 
 const Quic = () => {
-    const [answer,setQuiz]= useState([]);
-    useEffect(()=>{
-        axios.get('https://openapi.programming-hero.com/api/quiz')
-        .then(data=>{
-            const answerLoaded = data.data;
-            console.log(answer);
-            const quizData= answerLoaded.map(quiz=>{
-                const singleQuiz={
-                    name:quiz.name,
-                    
-
-                }
-                return singleQuiz;
-                
-            })
-            console.log(quizData);
-            setQuiz(quizData)
-        })
-        
-    },[])
+    const book = useLoaderData()
+    const bookData = book.data
+    console.log(bookData);
     return (
-        
-        <BarChart width={150} height={40} data={answer}>
-          <Bar dataKey="quiz" fill="#8884d8" />
-        </BarChart>
-  
+        <div>
+            <h1>Total Number of Quizzes</h1>
+            <div>
+
+                <LineChart width={400} height={400} data={bookData}>
+                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                </LineChart>
+            </div>
+
+        </div>
     );
 };
 
