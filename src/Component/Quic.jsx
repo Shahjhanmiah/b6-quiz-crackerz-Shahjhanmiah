@@ -1,13 +1,16 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts'
+import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+import './Quic.css';
+
+
 
 const Quic = () => {
     const book = useLoaderData()
     const bookData = book.data
     console.log(bookData);
     return (
-        <div>
+        <div className='chart-container'>
             <h1>Total Number of Quizzes</h1>
             <div>
 

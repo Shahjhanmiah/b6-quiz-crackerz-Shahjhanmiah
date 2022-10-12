@@ -17,11 +17,11 @@ const Blog = () => {
 
 
                     <h3 className='text-2xl font-semibold md-5 bg-green-200 p-8 my-5'></h3>
-                <h1>What is use ref</h1>
-                <p>The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>
+                    <h1>What is use ref</h1>
+                    <p>The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>
 
                 </h3>
-                
+
             </div>
         </div>
     );

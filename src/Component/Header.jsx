@@ -55,7 +55,7 @@ const Header = () => {
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
-                <p> Cart</p>
+                
                 <p className='absolute bottom-5 left-11'></p>
               </div>
             </Link>
@@ -144,6 +144,16 @@ const Header = () => {
                 </div>
                 <nav>
                   <ul className='space-y-4'>
+                  <li>
+                      <Link
+                        to='/home'
+                        aria-label='home'
+                        title='home'
+                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                      >
+                        Home
+                      </Link>
+                    </li>
                     <li>
                       <Link
                         to='/shop'
@@ -162,7 +172,7 @@ const Header = () => {
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         <div className='relative py-3'>
-                          <p> Cart</p>
+                        
                           <p className='absolute bottom-5 left-11'></p>
                         </div>
                       </Link>
@@ -174,6 +184,15 @@ const Header = () => {
                        
                       >
                         Quic
+                      </Link>
+                      </li>
+                      <li>
+                      <Link
+                        to='/blog'
+                       
+                       
+                      >
+                        Blog
                       </Link>
                     </li>
                   </ul>
