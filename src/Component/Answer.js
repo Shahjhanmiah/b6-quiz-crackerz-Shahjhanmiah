@@ -1,9 +1,10 @@
 import React from 'react';
 import Question from './Question';
+import './Answer.css';
 
 
-const Answer = ({quiz}) => {
-    const {options,question,id,correctAnswer,data}= quiz;
+const Answer = ({quiz,count}) => {
+    const {options,question,id,correctAnswer,}= quiz;
     console.log(correctAnswer);
     const handleClick =(answer)=>{
         // console.log(correctAnswer,answer)
@@ -20,12 +21,13 @@ const Answer = ({quiz}) => {
            
            <div className='bg-green-200 p-8 my-5 rouded-lg'>
             <h3 className='text-2xl font-semibold md-5'>
-                <p>{question}</p>
             </h3>
             <h3 className='text-2xl font-semibold md-5 bg-green-200 p-8 my-5'>
+                <div className='ques-container'>
+                <h3>{question.replace( /(<([^>]+)>)/ig, '')}</h3>
                 <p onClick={()=>handleClick(correctAnswer)} className='text-blue-500 icons'><i class="fa-solid fa-eye">
                   </i></p>
-               
+                </div>
                
                 <p>{options}</p>
                 <input onClick={()=>handleClick(options[0])}name="radio"type='radio'></input>
