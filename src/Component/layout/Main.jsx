@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Header from '../Header';
 export const BookDataContext  = createContext([])
@@ -16,8 +16,6 @@ const Main = () => {
             <Header></Header>
             <Outlet></Outlet>
            
-        
-
        </BookDataContext.Provider>
     );
 }; 

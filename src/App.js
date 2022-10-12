@@ -8,6 +8,8 @@ import ErrorPage from './Component/Errorpage';
 import Book from './Component/Shop'
 import Quic from './Component/Quic';
 import Shop from './Component/Shop';
+import Question from './Component/Question';
+import Blog from './Component/Blog'
 
 
 
@@ -35,24 +37,39 @@ function App() {
         },
         {
           path:'/shop',
-          element:<Shop></Shop>
-         
-          
+          element:<Shop></Shop>,  
           
         },
         {
           path:'/quic',
           element:<Quic></Quic>
+        },
+        {
+          path:'/blog',
+          element:<Blog></Blog>
+
+        },
+        {
+          path:'/quic/:quizId',
+          loader:async({params})=>{
+            console.log(params.quizId);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element:<Question></Question>,
         }
-
-
+        
 
 
 
       ]
+      
 
+      
 
-    }
+    },
+    
+    
+   
   ])
   return (
     <div>

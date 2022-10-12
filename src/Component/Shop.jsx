@@ -5,12 +5,7 @@ import Product from './Product';
 const Shop = () => {
   const bookData= useContext(BookDataContext);
   const [cart,setCart] =useState([])
-  const handleAddToCart= (book)=>{
-    const newCart = [...cart,book];
-    setCart(newCart);
-
-    
-  }
+  
 
   return (
     <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
@@ -19,7 +14,7 @@ const Shop = () => {
           bookData.map(book=><Product
           key={book.id}
           book={book}
-          handleAddToCart={handleAddToCart}></Product>)
+         ></Product>)
         }
       </div>
     </div>
