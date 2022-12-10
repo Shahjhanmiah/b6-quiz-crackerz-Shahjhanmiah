@@ -8,7 +8,7 @@ const Product = ({book}) => {
            navigate(`/quic/${id}`) 
         }
   return (
-    <div className='bg-gray-100 p-6 rounded shadow-lg bg-slate-500  transition:0.5 ease-out hover:translate-x-2 transform'>
+    <div className='bg-gray-100 p-6 rounded shadow-lg bg-slate-500  transition:0.5 ease-out hover:translate-y-20 transform opacity-3'>
       <img
         className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
         src={logo}
