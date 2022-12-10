@@ -14,14 +14,14 @@ const Header = () => {
           title='Smart Home'
           className='inline-flex items-center'
         >
-          {/* <svg
+          <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 32 32'
             fill='currentColor'
             className='flex-shrink-0 w-8 h-8 rounded-full text-gray-900'
           >
             <path d='M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z'></path>
-          </svg> */}
+          </svg>
           <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
             Eduction
           </span>
@@ -133,12 +133,12 @@ const Header = () => {
                       className='p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {/* <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
+                      <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
                         <path
                           fill='currentColor'
                           d='M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z'
                         />
-                      </svg> */}
+                      </svg>
                     </button>
                   </div>
                 </div>
